@@ -21,6 +21,9 @@ exports.index = function(req, res) {
 
 exports.usersUpdate = function(req, res) {
 
+    console.log(req);
+    console.log(req.body.firstname);
+    console.log(req.body.lastname);
     let firstnamevalue = req.body.firstname;
     let lastnamevalue = req.body.lastname;
 
