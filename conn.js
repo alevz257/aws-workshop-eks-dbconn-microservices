@@ -1,8 +1,9 @@
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-  host: "kube-db",
+  host: "db",
   user: "dbadmin",
+  port: "3307",
   password: "admin123",
   database: "nodejs"
 });
