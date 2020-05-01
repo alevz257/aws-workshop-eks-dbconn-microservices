@@ -4,7 +4,7 @@ var response = require('./res');
 var connection = require('./conn');
 
 exports.users = function(req, res) {
-    connection.query('SELECT * FROM nodetable', function (error, rows, fields){
+    connection.query('SELECT firstname FROM nodetable', function (error, rows, fields){
         if(error){
             console.log(error)
         } else{
